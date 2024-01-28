@@ -1,5 +1,11 @@
-async function run() {
-  console.log('starter-pack');
+import config from './config';
+
+async function bootstrap() {
+  try {
+    console.log(config.appName);
+  } catch (error) {
+    console.log(error);
+  }
 }
 
-run();
+bootstrap();
